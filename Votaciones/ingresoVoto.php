@@ -1,7 +1,6 @@
 
 <?php
 include '../Conexion/ConexionDB.php';
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombres = $_POST["nombres"];
     $alias = $_POST["alias"];
@@ -31,10 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: ../Votaciones/errorVotacion.php");
             }
     }
-
-
-   
-
     $conn->close();
 }
 ?>

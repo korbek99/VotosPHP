@@ -45,12 +45,10 @@
     
         echo '<option value="' . $row["RegionID"] . '" ' . $selected . '>' . $row["NombreRegion"] . '</option>';
     }
-
     $conn->close();
     ?>
 </select>
-
-        </td>
+    </td>
     <td></td>
   </tr>
   <tr>
@@ -71,7 +69,6 @@
             while ($row = $result->fetch_assoc()) {
                 echo '<option value="' . $row["ComunaID"] . '">' . $row["NombreComuna"] . '</option>';
             }
-
             $conn->close();
             ?>
         </select>
@@ -89,7 +86,6 @@
             while ($row = $result->fetch_assoc()) {
                 echo '<option value="' . $row["CandidatoID"] . '">' . $row["NombreCandidato"] . '</option>';
             }
-
             $conn->close();
             ?>
         </select>
