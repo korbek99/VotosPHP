@@ -27,7 +27,7 @@
   </tr>
   <tr>
     <td><label for="email">Email</label></td>
-    <td><input type="text" id="email" name="email" required></td>
+    <td><input type="text" id="email" name="email" onblur="validarEmail()" required></td>
     <td></td>
   </tr>
   <tr>

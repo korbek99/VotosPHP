@@ -63,3 +63,15 @@ function validarAlias() {
         return false;
     }
  }
+
+ function validarEmail() {
+    var emailInput = document.getElementById("email");
+    var email = emailInput.value;
+    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (!regex.test(email)) {
+        alert("ingrese un correo electrónico válido.");
+        emailInput.value = "";
+        emailInput.focus();
+    }
+}
